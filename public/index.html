@@ -15,64 +15,226 @@
 </head>
 
 <body>
-	<!--Navbar-->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
 
-        <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i>
-        </button>
+<nav class="navbar navbar-light white">
 
-        <div class="container">
+    <!-- Collapse button-->
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+        <i class="fa fa-bars"></i>
+    </button>
 
-            <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <!--Navbar Brand-->
-                <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">INSERT LOGO HERE</a>
-                <!--Links-->
-                <ul class="nav navbar-nav pull-xs-right">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">How it Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Service Providers</a>
-                    </li>                
-                </ul>
-                <!--Search form-->
-                <form href = "/search" class="form-inline">
-                    <input class="form-control" type="text" placeholder="search">
-                </form>
-            </div>
-            <!--/.Collapse content-->
+    <div class="container">
 
-        </div>
-
-    </nav>
-    <!--/.Navbar-->
-
-    <!--Mask-->
-    <div class="view hm-black-strong">
-        <div class="full-bg-img flex-center">
-            <ul class="animated fadeInUp">
-                <li>
-                    <h1 class="h1-responsive">Navigate Complexity with Confidence</h1></li>
-                <li>
-                    <p>Connect with professionals that know your business</p>
+        <!--Collapse content-->
+        <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+            <!--Navbar Brand-->
+            <a class="navbar-brand logo"></a>
+            <!--Links-->
+            <ul class="nav navbar-nav pull-xs-right">
+                <li class="nav-item active">
+                    <a class="nav-link">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li>
-                    <a target="_blank" href="#" class="btn btn-primary btn-lg">Sign up!</a>
-                    <a target="_blank" href="#" class="btn btn-default btn-lg">Learn more</a>
+                <li class="nav-item">
+                    <a class="nav-link">How it Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Service Providers</a>
                 </li>
             </ul>
+            <!--Search form-->
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search">
+            </form>
         </div>
+        <!--/.Collapse content-->
+
     </div>
-    <!--/.Mask-->
+
+</nav>
+
+<!-- ======================== HERO BANNER========================== -->
+
+<div class="view hm-black-strong">
+        <div class="full-bg-img flex-center">
+            <div class="container">
+                <div class="row" id="home">
+
+                    <!--First column-->
+                    <div class="col-lg-6">
+                        <div class="description">
+                            <h2 class="h2-responsive wow fadeInLeft">Navigate complexity with confidence </h2>
+                            <hr class="hr-dark wow fadeInLeft">
+                            <p class="wow fadeInLeft" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</p>
+                            <br>
+                            <a class="btn btn-white-outline btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+                        </div>
+                    </div>
+                    <!--/.First column-->
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- ======================== FUNCTIONAL LINE CARDS ========================== -->
+
+<div class="container">
+  <div class="row">
+   
+    <div class="col-md-4">
+      <!--Rotating card-->
+<div class="card-wrapper">
+    <div id="card-1" class="card-rotating effect__click">
+
+        <!--Front Side-->
+        <div class="face front">
+
+            <!-- Image-->
+            <div class="card-up">
+                <img src="http://mdbootstrap.com/images/reg/reg%20(35).jpg" class="img-fluid">
+            </div>
+            <!--Content-->
+            <div class="card-block">
+                <h4>Jonathan Doe</h4>
+                <p>Web developer</p>
+                <!--Triggering button-->
+                <a class="rotate-btn" data-card="card-1"><i class="fa fa-repeat"></i> Click here to rotate</a>
+            </div>
+        </div>
+        <!--/.Front Side-->
+
+        <!--Back Side-->
+        <div class="face back">
+
+            <!--Content-->
+            <h4>About me</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+            <hr>
+            <!--Social Icons-->
+            <ul class="inline-ul">
+                <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="icons-sm li-ic"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <!--Triggering button-->
+            <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+        </div>
+        <!--/.Back Side-->
+
+    </div>
+</div>
+<!--/.Rotating card--> 
+    </div>
+    
+    <div class="col-md-4">
+      <!--Rotating card-->
+<div class="card-wrapper">
+    <div id="card-1" class="card-rotating effect__click">
+
+        <!--Front Side-->
+        <div class="face front">
+
+            <!-- Image-->
+            <div class="card-up">
+                <img src="http://mdbootstrap.com/images/reg/reg%20(35).jpg" class="img-fluid">
+            </div>
+            <!--Avatar-->
+            <div class="avatar"><img src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-2.jpg" class="img-circle img-responsive">
+            </div>
+            <!--Content-->
+            <div class="card-block">
+                <h4>Jonathan Doe</h4>
+                <p>Web developer</p>
+                <!--Triggering button-->
+                <a class="rotate-btn" data-card="card-1"><i class="fa fa-repeat"></i> Click here to rotate</a>
+            </div>
+        </div>
+        <!--/.Front Side-->
+
+        <!--Back Side-->
+        <div class="face back">
+
+            <!--Content-->
+            <h4>About me</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+            <hr>
+            <!--Social Icons-->
+            <ul class="inline-ul">
+                <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="icons-sm li-ic"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <!--Triggering button-->
+            <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+        </div>
+        <!--/.Back Side-->
+
+    </div>
+</div>
+<!--/.Rotating card--> 
+    </div>
+    
+    <div class="col-md-4">
+      <!--Rotating card-->
+<div class="card-wrapper">
+    <div id="card-1" class="card-rotating effect__click">
+
+        <!--Front Side-->
+        <div class="face front">
+
+            <!-- Image-->
+            <div class="card-up">
+                <img src="http://mdbootstrap.com/images/reg/reg%20(35).jpg" class="img-fluid">
+            </div>
+            <!--Avatar-->
+            <div class="avatar"><img src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-2.jpg" class="img-circle img-responsive">
+            </div>
+            <!--Content-->
+            <div class="card-block">
+                <h4>Jonathan Doe</h4>
+                <p>Web developer</p>
+                <!--Triggering button-->
+                <a class="rotate-btn" data-card="card-1"><i class="fa fa-repeat"></i> Click here to rotate</a>
+            </div>
+        </div>
+        <!--/.Front Side-->
+
+        <!--Back Side-->
+        <div class="face back">
+
+            <!--Content-->
+            <h4>About me</h4>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+            <hr>
+            <!--Social Icons-->
+            <ul class="inline-ul">
+                <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="icons-sm li-ic"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <!--Triggering button-->
+            <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+        </div>
+        <!--/.Back Side-->
+
+    </div>
+</div>
+<!--/.Rotating card--> 
+    </div>
+    
+  </div>
+</div>
 
 
-
+<!-- ======================== CONTENT CARDS ========================== -->
 
 	
 <!-- JQuery -->
