@@ -6957,13 +6957,13 @@ button:focus {
 }
 
 .btn-primary-outline {
-  border: 2px solid #4285F4;
-  color: #0d47a1 !important;
+  border: 2px solid #116990;
+  color: #116990 !important;
   background-color: transparent;
 }
 
 .btn-primary-outline:hover, .btn-primary-outline:focus {
-  color: #4285F4;
+  color: #116990;
 }
 
 .btn-secondary-outline {
@@ -13377,7 +13377,8 @@ button.toast-close-button {
   /* please don't change 'position' */
   background-color: #aaa;
   border-radius: 6px;
-  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out,
+ border-radius .2s ease-in-out;
   bottom: 2px;
   /* there must be 'bottom' for ps-scrollbar-x */
   height: 6px;
@@ -13403,7 +13404,8 @@ button.toast-close-button {
   /* please don't change 'position' */
   background-color: #aaa;
   border-radius: 6px;
-  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+  transition: background-color .2s linear, height .2s linear, width .2s ease-in-out,
+ border-radius .2s ease-in-out;
   right: 2px;
   /* there must be 'right' for ps-scrollbar-y */
   width: 6px;
