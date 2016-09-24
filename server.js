@@ -24,23 +24,27 @@ app.use('/public', express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // SETTING UP DATABASE CONNECTION & Mongoose
-mongoose.connect('mongodb://localhost/serviceProviders');
+mongoose.connect('mongodb://localhost/naviqo');
 var db = mongoose.connection;
 
-db.on('error', function(err){
-	console.log('Mongoose connnection successful.');
+db.on('error', function(err) {
+  console.log('Mongoose Error: ', err);
 });
 
-var Provider = require('./models/ServiceProvider.js');
-var Requestor = require('./models/ServiceRequestor.js');
+db.once('open', function() {
+  console.log('Mongoose connection successful.');
+});
+
 
 //ROUTES
+var Serviceproviders = require('./models/Serviceproviders.js');
+// var Requestor = require('./models/ServiceRequestor.js');
+
 var home_Controller = require('./controllers/homeController.js');
 var search_Controller = require('./controllers/searchController.js');
 
 app.use('/', home_Controller);
 app.use('/', search_Controller);
-
 
 app.listen(PORT, function(){
 	console.log('Listening on port ' + PORT);

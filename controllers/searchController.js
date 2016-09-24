@@ -4,14 +4,17 @@ var bodyParser = require('body-parser');
 var app = express();
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
+var Serviceproviders = require('../models/Serviceproviders.js');
 
-router.get('/search', function(req,res){
-	//console.log("You hit that");
-	mongoose.connect('mongodb://localhost/serviceProviders');
-	var db = mongoose.connection;
-	var hbObj = db.firms.find().limit(5);
-	console.log(hbObj);
-	res.render('search');
+router.get('/search', function(req, res){
+	Serviceproviders.find({}, function(err, doc){
+		if (err){
+			console.log(err);
+		} 
+		else {
+			res.json(doc);
+		}
+	});
 });
 
 module.exports = router;
