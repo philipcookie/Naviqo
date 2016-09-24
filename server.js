@@ -35,11 +35,11 @@ var Provider = require('./models/ServiceProvider.js');
 var Requestor = require('./models/ServiceRequestor.js');
 
 //ROUTES
-var homeController = require('./controllers/homeController.js');
-app.use('/', homeController);
+var home_Controller = require('./controllers/homeController.js');
+var search_Controller = require('./controllers/searchController.js');
 
-// var searchResults = require('./controllers/searchResults.js');
-// app.use('/search', searchResults);
+app.use('/', home_Controller);
+app.use('/', search_Controller);
 
 
 app.listen(PORT, function(){
