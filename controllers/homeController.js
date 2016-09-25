@@ -5,7 +5,7 @@ var app = express();
 var methodOverride = require('method-override');
 
 router.get('/', function(req,res){
-	res.redirect('/public/index.html');
+	res.render('index');
 });
 
 module.exports = router;

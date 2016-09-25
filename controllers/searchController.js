@@ -10,11 +10,15 @@ mongoose.connect('mongodb://localhost/naviqo'); // WHY DID I HAVE TO BRING THIS 
 var db = mongoose.connection;
 
 router.get('/search', function(req, res){
-	db.collection('Serviceproviders').find().limit(5).toArray((err, result) => {
-		if(err) return console.log (err)
+	db.collection('Serviceproviders').find().toArray((err, result) => {
 		
-		res.render('search');
-		})
+		if (err) {
+			throw (err);
+		} 
+		//console.log(result);
+		var hbsObj = {provider : result}
+		res.render('search', hbsObj);
+	});
 });
 
 module.exports = router;
