@@ -6,15 +6,15 @@ var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var Serviceproviders = require('../models/Serviceproviders.js');
 
+mongoose.connect('mongodb://localhost/naviqo'); // WHY DID I HAVE TO BRING THIS HERE TO GET IT TO WORK
+var db = mongoose.connection;
+
 router.get('/search', function(req, res){
-	Serviceproviders.find({}, function(err, doc){
-		if (err){
-			console.log(err);
-		} 
-		else {
-			res.json(doc);
-		}
-	});
+	db.collection('Serviceproviders').find().limit(5).toArray((err, result) => {
+		if(err) return console.log (err)
+		
+		res.render('search');
+		})
 });
 
 module.exports = router;

@@ -43,6 +43,7 @@ var Serviceproviders = require('./models/Serviceproviders.js');
 var home_Controller = require('./controllers/homeController.js');
 var search_Controller = require('./controllers/searchController.js');
 
+
 app.use('/', home_Controller);
 app.use('/', search_Controller);
 

@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var ServiceProviderSchema = new Schema({
+var ServiceprovidersSchema = new Schema({
 	path_AF : {
 		type: Boolean
 	},
@@ -56,6 +56,6 @@ var ServiceProviderSchema = new Schema({
 
 });
 
-var ServiceProvider = mongoose.model('ServiceProvider', ServiceProviderSchema);
+var Serviceproviders = mongoose.model('Serviceproviders', ServiceprovidersSchema);
 
-module.exports = ServiceProvider;
+module.exports = Serviceproviders;
