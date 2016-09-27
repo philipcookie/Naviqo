@@ -47,7 +47,7 @@ header,
     }
 }
 
-
+/* CENTER CONTAINERS IN LANDING PAGE */
 .aligner {
   display: flex;
   align-items: center;
@@ -58,4 +58,73 @@ header,
   max-width: 50%;
 }
 
+/* LOGIN BUTTON FOR NAV */
+.loginButton{
+  border: 2px solid #FC9923;
+  color: #116990 !important;
+  background-color: transparent;
+}
 
+.loginButton:hover, .loginButton:focus {
+  color: #ffbb33;
+}
+
+/* POST BANNER & BUTTONS*/
+
+article.banner{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #116990;
+  color: #ffffff;
+}
+
+article.banner .text-container{
+  width: 60%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+article.banner .text-container ul{
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+article.banner .text-container > ul > li {
+  margin:0px;
+  padding:10px;
+  width: 200px;
+  overflow:hidden;
+  display: inline-block;
+}
+
+.banner-btn {
+  display:inline-block;
+  text-align:center;
+  border:none;
+  cursor:pointer;
+  border: none;
+  min-height: 30px;
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-pro{
+  width: 150px;
+  height: 42px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 8px 15px;
+  color: #FC9923 !important;
+}
+
+.btn-biz{
+  width: 150px;
+  border: 1px solid #FC9923;
+  border-radius: 100px;
+  padding: 8px 15px;
+  color: #ffffff;
+}

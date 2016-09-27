@@ -1,0 +1,32 @@
+[
+
+	{
+		"type" : "serviceProvider",
+		"firstName" : "philip",
+		"lastName" : "cooke",
+		"email" : "philipjcooke@gmail.com",
+		"company" : {
+			"name" : "mirna therapeutics",
+			"address" : "2140 woodward street",
+			"city" : "austin",
+			"state" : "texas",
+			"zip" : "78744",
+			"industry" : "biopharma"
+			}
+	},
+
+	{
+		"type" : "serviceRequester",	
+		"firstName" : "john",
+		"lastName" : "doe",
+		"email" : "johndoe@ghomeaway.com",
+		"company" : {
+			"name" : "home away",
+			"address" : "1234 homeaway",
+			"city" : "austin",
+			"state" : "texas",
+			"zip" : "78744",
+			"industry" : "technology"
+			}
+	} 
+]
