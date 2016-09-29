@@ -6,8 +6,7 @@ var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var Serviceproviders = require('../models/Serviceproviders.js');
 
-mongoose.connect('mongodb://localhost/naviqo'); // WHY DID I HAVE TO BRING THIS HERE TO GET IT TO WORK
-var db = mongoose.connection;
+var db = mongoose.connection; //WHY DO I NEED TO DO THIS
 
 router.get('/search', function(req, res){
 	db.collection('Serviceproviders').find().toArray((err, result) => {

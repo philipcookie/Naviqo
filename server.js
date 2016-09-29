@@ -42,10 +42,11 @@ var Serviceproviders = require('./models/Serviceproviders.js');
 
 var home_Controller = require('./controllers/homeController.js');
 var search_Controller = require('./controllers/searchController.js');
-
+var signup_Controller = require('./controllers/signup.js');
 
 app.use('/', home_Controller);
 app.use('/', search_Controller);
+app.use('/', signup_Controller)
 
 app.listen(PORT, function(){
 	console.log('Listening on port ' + PORT);
