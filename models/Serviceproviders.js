@@ -56,6 +56,6 @@ var ServiceprovidersSchema = new Schema({
 
 });
 
-var Serviceproviders = mongoose.model('Serviceproviders', ServiceprovidersSchema);
+var Serviceproviders = mongoose.model('Serviceprovider', ServiceprovidersSchema);
 
 module.exports = Serviceproviders;

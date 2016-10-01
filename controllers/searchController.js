@@ -6,11 +6,15 @@ var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var Serviceproviders = require('../models/Serviceproviders.js');
 
-var db = mongoose.connection; //WHY DO I NEED TO DO THIS
-
-router.get('/search', function(req, res){
-	db.collection('Serviceproviders').find().toArray((err, result) => {
+router.post('/AF', function(req, res){
+	
+	console.log('You have arrived');
+	console.log(req.body);
+	
+	Serviceproviders.find({}, (err, result) => { 
 		
+		//console.log(result);
+
 		if (err) {
 			throw (err);
 		} 

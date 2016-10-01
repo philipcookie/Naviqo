@@ -45,7 +45,7 @@ var search_Controller = require('./controllers/searchController.js');
 var signup_Controller = require('./controllers/signup.js');
 
 app.use('/', home_Controller);
-app.use('/', search_Controller);
+app.use('/api', search_Controller); 
 app.use('/', signup_Controller)
 
 app.listen(PORT, function(){

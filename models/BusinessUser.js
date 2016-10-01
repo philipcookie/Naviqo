@@ -10,7 +10,7 @@ var BusinessUserSchema = new Schema({
 		type : String
 	},
 
-	businessEmail : {
+	password : {
 		type : String
 	},
 
@@ -23,6 +23,6 @@ var BusinessUserSchema = new Schema({
 	}
 });
 
-var BusinessUser = mongoose.model('businessUsers', BusinessUserSchema);
+var BusinessUser = mongoose.model('BusinessUser', BusinessUserSchema);
 module.exports = BusinessUser;
 
