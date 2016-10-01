@@ -41,7 +41,9 @@
                     <a class="nav-link">Service Providers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="loginButton btn-rounded waves-effect">Login</a>
+                    <form>
+                        <a class="loginButton btn-rounded waves-effect" data-toggle = "modal" data-target = "#modal-login">Login</a>
+                    </form>
                 </li>
             </ul>
             <!--Search form-->
@@ -56,6 +58,54 @@
 	</nav>
 
         {{{ body }}}
+                                
+<!-- Modal Login -->
+    <div class="modal fade modal-ext" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+               
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3><i class="fa fa-user"></i> Login</h3>
+                </div>
+                
+                <!--Body-->
+                <form action = "/login" method = "POST">
+                    <div class="modal-body">
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="text" name="username" class="form-control">
+                            <label for="form2">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" name = "password" class="form-control">
+                            <label for="form3">Your password</label>
+                        </div>
+                            <div class="text-xs-center">
+                                <button type = "submit" value = "submit" class="btn btn-primary btn-lg">Login</button>
+                            </div>          
+                    </div>      
+                </form>
+                
+                <!--Footer-->
+                <div class="modal-footer">
+                    <div class="options">
+                        <p>Not a member? <a href="#">Sign Up</a></p>
+                        <p>Forgot <a href="#">Password?</a></p>
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
 
     </body>
 
