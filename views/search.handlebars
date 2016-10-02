@@ -1,7 +1,38 @@
-<h1> FUCK HANDLEBARS</h1>
 
-{{#each provider}}
+<ul class = "search_results">
 
-<li> {{this.SP_Firm_Name}} </li>
+	{{#each provider}}
 
-{{/each}}
+	<div style ="height:10px">
+	</div>
+
+		<li> 
+
+				<div class = "search_result">
+
+					<div class = "row">
+					
+						<div class = "col-md-3">
+							<img class = "companyLogo" src = "/public/assets/company/{{this.SP_Firm_Logo}}">
+							<p class = "address text-md-left"> {{this.SP_Firm_Address}}</br>
+							{{this.SP_Firm_City}}, {{this.SP_Firm_City}} {{this.SP_Firm_Zip}}</p>
+						</div>
+
+						<div class = "col-md-6">
+							<h2 class = "text-md-left"> {{this.SP_Firm_Name}}</h2>
+							<p class = "text-md-left"> {{this.SP_Firm_Overview}}</p>
+						</div>
+
+						<div class = "col-md-3">
+							<p>{{this.SP_Firm_Name}}</p>
+						</div>
+					
+					</div>
+
+				</div>
+
+		</li>
+
+	{{/each}}
+
+</ul>
