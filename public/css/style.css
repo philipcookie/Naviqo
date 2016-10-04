@@ -162,11 +162,18 @@ article.banner .text-container > ul > li {
 }
 
 .address {
-  margin-top: 5px;
-  margin-left : 7px;
+  margin-top: 5px !important;
+  margin-left : 7px !important;
 }
 
+.selectDiv {
+  height : 100%;
+}
 
+.selected {
+  color : green;
+  border : 5px solid green;
+}
 
 
 

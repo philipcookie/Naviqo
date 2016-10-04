@@ -10,7 +10,7 @@
 
 				<div class = "search_result">
 
-					<div class = "row">
+					<div class = "selectDiv flex-center row">
 					
 						<div class = "col-md-3">
 							<img class = "companyLogo" src = "/public/assets/company/{{this.SP_Firm_Logo}}">
@@ -24,7 +24,10 @@
 						</div>
 
 						<div class = "col-md-3">
-							<p>{{this.SP_Firm_Name}}</p>
+							<fieldset class= "form-group">
+							    <input type="checkbox" id="checkbox{{@index}}">
+							    <label for="checkbox{{@index}}"></label>
+							</fieldset>
 						</div>
 					
 					</div>
