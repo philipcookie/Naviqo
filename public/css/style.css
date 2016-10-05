@@ -60,7 +60,7 @@ header,
 
 /* LOGIN BUTTON FOR NAV */
 .loginButton{
-  border: 2px solid #FC9923;
+  border: 1px solid #FC9923;
   color: #116990 !important;
   background-color: transparent;
 }
@@ -164,7 +164,6 @@ article.banner .text-container > ul > li {
 .firmDescription {
   height : 175px;
   width : 100%;
-  font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
   font-size : 82%;
   overflow : scroll;
   }
@@ -182,7 +181,14 @@ article.banner .text-container > ul > li {
   border : 3px solid #116990;
 }
 
-
+.footer-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #EEEEEE;
+  padding: 20px;
+  }
+}
 
 
 
