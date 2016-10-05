@@ -161,6 +161,14 @@ article.banner .text-container > ul > li {
   margin-left : 7px;
 }
 
+.firmDescription {
+  height : 175px;
+  width : 100%;
+  font-family : Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  font-size : 82%;
+  overflow : scroll;
+  }
+
 .address {
   margin-top: 5px !important;
   margin-left : 7px !important;
@@ -171,8 +179,7 @@ article.banner .text-container > ul > li {
 }
 
 .selected {
-  color : green;
-  border : 5px solid green;
+  border : 3px solid #116990;
 }
 
 
