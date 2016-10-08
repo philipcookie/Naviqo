@@ -68,7 +68,7 @@ var databaseUri = 'mongodb://localhost/naviqo';
 if (process.env.MONGOB_URI) {
 	mongoose.connect(process.env.MONGODB_URI);
 	} else {
-		mongoose.connect(databseUri);
+		mongoose.connect(databaseUri);
 	}
 
 // SETTING UP DATABASE CONNECTION & Mongoose
