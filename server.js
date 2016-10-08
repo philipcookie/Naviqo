@@ -63,6 +63,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/public', express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+//SET UP MLAB MONGOOSE CONNECTION
+var databaseUri = 'mongodb://localhost/naviqo';
+if (process.env.MONGOB_URI) {
+	mongoose.connect(process.env.MONGODB_URI);
+	} else {
+		mongoose.connect(databseUri);
+	}
+
 // SETTING UP DATABASE CONNECTION & Mongoose
 mongoose.connect('mongodb://localhost/naviqo');
 var db = mongoose.connection;

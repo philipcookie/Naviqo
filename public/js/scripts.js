@@ -9,10 +9,10 @@ $(document).ready(function() {
 			$(this).parent().closest('div.search_result').addClass("selected");
 			count++;
 			$("body").overhang({
-				custom: true, // Set custom to true
+				type: "confirm",
 				message : "Request a proposal from " + count + " vendors.",
-				primary: "#116990", // Your custom primary color
-				accent: "#FC9923", // Your custom accent color
+				primary: "#116990", 
+				accent: "#FC9923", 
 				});
 		} else {
 			count--;
