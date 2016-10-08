@@ -64,7 +64,7 @@ app.use('/public', express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //SET UP MLAB MONGOOSE CONNECTION
-var databaseUri = 'mongodb://localhost/naviqo';
+var databaseUri = 'mongodb://heroku_n5fgs3dc:uscm70ah8jce5781h4r76fq3p9@ds053146.mlab.com:53146/heroku_n5fgs3dc';
 if (process.env.MONGOB_URI) {
 	mongoose.connect(process.env.MONGODB_URI);
 	} else {
